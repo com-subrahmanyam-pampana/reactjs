@@ -1,0 +1,37 @@
+import React from "react";
+/*
+The React object is the entry point to the React library. 
+*/
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+
+import MainApp from "./App";
+
+
+
+/* ReactNode:
+ReactNode is  anything(number,null,a ReactElement,text,or an array of ReactNodes) that React can render.
+It  can be text, number, boolean, null, undefined, a portal, a ReactElement, 
+We need to pass ReactNode to root.render(children: React.ReactNode) method
+*/
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+let simpleReactExample = false;
+if (simpleReactExample) {
+  /**
+ The smallest React example looks like this:
+ */
+  root.render(<h1>Hello, world!</h1>);
+} else {
+  /*For other example use this block.All our exaples are loaded from App.js file*/
+  /* MainApp is a function in the App.js with will return JSX element */
+  root.render(
+    <React.StrictMode>
+      <MainApp />
+    </React.StrictMode>
+  );
+}
+
+reportWebVitals();
