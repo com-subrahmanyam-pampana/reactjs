@@ -32,6 +32,14 @@ if (simpleReactExample) {
       <MainApp />
     </React.StrictMode>
   );
+  /*Wrapping it with <React.StrictMode> helps
+   catch potential issues by enabling extra checks, 
+   especially useful during development. */
 }
 
 reportWebVitals();
+
+/*reportWebVitals() at the end is a function 
+call used for performance monitoring. 
+It allows you to measure and report performance metrics, 
+such as loading times or interactivity, for the app. */
