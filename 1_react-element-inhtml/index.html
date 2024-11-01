@@ -16,3 +16,25 @@
         </script>
     </body>
 </html>
+
+
+<!-- 
+Create Virtual DOM: 
+The React.createElement() function is called to create a 
+virtual representation of the React component 
+(in this case, an <h1> element with the text "Hello, World!!!"). This virtual representation is an object that describes what the actual DOM should look like.
+
+Render to Actual DOM: After creating the virtual DOM, 
+ReactDOM.render() takes that virtual representation and 
+compares it to the current state of the actual HTML DOM.
+    
+Diffing Process: React uses its diffing algorithm to 
+determine what has changed between the virtual DOM and
+the actual DOM. Since this is the first render, it will 
+identify that the <h1> element needs to be added to the 
+actual DOM.
+    
+Update Actual DOM: React then updates the actual DOM
+ based on the differences identified. 
+ In this case, it will create and insert the <h1> 
+    element into the <div id="my_react_div">. -->
